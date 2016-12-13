@@ -216,6 +216,11 @@ platform {
 		)
 	}
 
+	bundle 'org.opengis.cite:schema-utils:1.8'
+	bnd group: 'org.opengis.cite', name: 'schema-utils', {
+      optionalImport 'com.thaiopensource.*'
+	}
+
 	// geotools additional bundles not in the default group
 	bundle group: 'org.geotools.jdbc', name: 'gt-jdbc-oracle', version: geotoolsVersion
 	bundle group: 'org.geotools.xsd', name: 'gt-xsd-core', version: geotoolsVersion
